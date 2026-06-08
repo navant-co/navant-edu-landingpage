@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navant Edu — Gerencie sua instituição inteira, de um só lugar</title>
+    <meta name="description"
+        content="Plataforma completa de gestão para faculdades, universidades e redes de ensino. Matrículas, financeiro, acadêmico, estágios e muito mais — tudo conectado, tudo simples.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- ─── NAVBAR ──────────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <div class="logo-mark">
+                    <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+                        <rect width="36" height="36" rx="10" fill="url(#lg1)" />
+                        <circle cx="18" cy="13" r="5" fill="white" opacity="0.9" />
+                        <ellipse cx="18" cy="26" rx="9" ry="5" fill="white" opacity="0.5" />
+                        <defs>
+                            <linearGradient id="lg1" x1="0" y1="0" x2="36" y2="36">
+                                <stop stop-color="#6366f1" />
+                                <stop offset="1" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="nav-brand">Navant <strong>Edu</strong></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#desafios">Desafios</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#modulos">Módulos</a></li>
+                <li><a href="#comparativo">Por que Navant?</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#cta" class="btn-ghost nav-cta-ghost">Falar com consultor</a>
+                <a href="#cta" class="btn-primary">Ver demonstração</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─────────────────────────────────────────────── -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content" data-reveal>
+
+                <h1 class="hero-title">
+                    Tudo que sua<br>
+                    instituição precisa,<br>
+                    <span class="gradient-text">no lugar certo.</span>
+                </h1>
+
+                <p class="hero-sub">
+                    Matrículas, financeiro, acadêmico, estágios, compras e muito mais —
+                    todos os processos da sua faculdade conectados em uma plataforma
+                    moderna e fácil de usar. Você foca em crescer, a Navant cuida do resto.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#cta" class="btn-primary btn-large">
+                        Quero conhecer a plataforma
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#modulos" class="btn-ghost btn-large">
+                        Ver todos os módulos
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        Sem treinamento longo
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        Implantação guiada
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        Suporte dedicado
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Mockup -->
+            <div class="hero-visual" data-reveal data-delay="1">
+                <div class="dashboard">
+                    <div class="dash-titlebar">
+                        <div class="titlebar-dots">
+                            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                        </div>
+                        <span class="titlebar-label">Painel da Direção</span>
+                    </div>
+
+                    <div class="dash-kpis">
+                        <div class="kpi kpi-a">
+                            <span class="kpi-label">Receita do Mês</span>
+                            <span class="kpi-value" data-count="4800000" data-format="currency">R$ 4,8M</span>
+                            <span class="kpi-delta positive">↑ 12% vs mês anterior</span>
+                        </div>
+                        <div class="kpi kpi-b">
+                            <span class="kpi-label">Inadimplência</span>
+                            <span class="kpi-value" data-count="2.1" data-format="pct">2,1%</span>
+                            <span class="kpi-delta positive">↓ 4,3pp vs ano passado</span>
+                        </div>
+                        <div class="kpi kpi-c">
+                            <span class="kpi-label">Alunos Ativos</span>
+                            <span class="kpi-value" data-count="12400" data-format="int">12.400</span>
+                            <span class="kpi-delta positive">↑ 8% este semestre</span>
+                        </div>
+                    </div>
+
+                    <div class="dash-divider"></div>
+
+                    <div class="dash-feed">
+                        <p class="feed-title">Atividade em tempo real</p>
+                        <div class="feed-item" id="fi-1">
+                            <span class="feed-dot green"></span>
+                            <div>
+                                <span class="feed-name">Pagamento confirmado</span>
+                                <span class="feed-sub">Ana Silva · Adm. 2026.1 · R$ 1.250</span>
+                            </div>
+                            <span class="feed-time">agora</span>
+                        </div>
+                        <div class="feed-item" id="fi-2">
+                            <span class="feed-dot blue"></span>
+                            <div>
+                                <span class="feed-name">Nova matrícula confirmada</span>
+                                <span class="feed-sub">Pedro Costa · Engenharia</span>
+                            </div>
+                            <span class="feed-time">1 min</span>
+                        </div>
+                        <div class="feed-item" id="fi-3">
+                            <span class="feed-dot purple"></span>
+                            <div>
+                                <span class="feed-name">Estágio aprovado</span>
+                                <span class="feed-sub">Maria Fernanda · Psicologia · TCE assinado</span>
+                            </div>
+                            <span class="feed-time">3 min</span>
+                        </div>
+                        <div class="feed-item" id="fi-4">
+                            <span class="feed-dot orange"></span>
+                            <div>
+                                <span class="feed-name">Bolsa de funcionário aplicada</span>
+                                <span class="feed-sub">50% concedida · Depto. RH</span>
+                            </div>
+                            <span class="feed-time">5 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-float-card">
+                    <span class="float-icon">🎓</span>
+                    <div>
+                        <strong>Acesso ao portal liberado</strong>
+                        <span>automaticamente após pagamento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── DESAFIOS ──────────────────────────────────────────── -->
+    <section class="section" id="desafios">
+        <div class="container">
+            <div class="section-tag">O dia a dia das IES</div>
+            <h2 class="section-title">Você já passou por alguma dessas situações?</h2>
+            <p class="section-sub">Esses são desafios reais que fazem parte da rotina de quase todas as instituições de
+                ensino — e que não precisam mais ser assim.</p>
+
+            <div class="challenges-grid">
+                <div class="challenge-card" data-reveal>
+                    <div class="ch-emoji">😩</div>
+                    <h3>"O aluno disse que pagou, mas não consigo confirmar"</h3>
+                    <p>Comprovantes chegam pelo WhatsApp, por e-mail, na portaria. A secretaria gasta horas tentando
+                        cruzar os dados. Com a Navant, o pagamento é confirmado automaticamente pela instituição
+                        bancária — sem achismo.</p>
+                </div>
+                <div class="challenge-card challenge-highlight" data-reveal data-delay="1">
+                    <div class="ch-emoji">📋</div>
+                    <h3>"Temos alunos que se rematric­ularam devendo, e só descobrimos depois"</h3>
+                    <p>Isso acontece porque o bloqueio depende de uma pessoa lembrar de checar. Na Navant, o sistema
+                        verifica automaticamente antes de liberar qualquer rematrícula.</p>
+                </div>
+                <div class="challenge-card" data-reveal data-delay="2">
+                    <div class="ch-emoji">🗂</div>
+                    <h3>"O processo de estágio ainda é feito em papel"</h3>
+                    <p>Três vias, assinatura de caneta, entrega na secretaria, arquivo em caixas. Temos alunos perdendo
+                        o prazo por burocracia. Com a Navant, o TCE é assinado digitalmente — de qualquer lugar.</p>
+                </div>
+                <div class="challenge-card" data-reveal>
+                    <div class="ch-emoji">📊</div>
+                    <h3>"Os dados ficam espalhados em vários sistemas"</h3>
+                    <p>Financeiro num sistema, acadêmico em outro, RH no Excel. Para gerar um relatório gerencial, são
+                        horas de trabalho. Com a Navant, tudo está no mesmo lugar.</p>
+                </div>
+                <div class="challenge-card" data-reveal data-delay="1">
+                    <div class="ch-emoji">📉</div>
+                    <h3>"Identificamos a evasão tarde demais"</h3>
+                    <p>O aluno para de aparecer em março. A coordenação descobre em julho — quando já foi para a
+                        concorrente. A Navant te avisa quando o padrão de risco de evasão aparece.</p>
+                </div>
+                <div class="challenge-card" data-reveal data-delay="2">
+                    <div class="ch-emoji">🤷</div>
+                    <h3>"Não sei de onde vêm os alunos que mais ficam"</h3>
+                    <p>Quais campanhas trazem alunos que ficam e pagam? Quais trazem alunos que somem no 2º mês? Sem
+                        rastreamento de origem, seu marketing vira adivinhação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROPOSTA ───────────────────────────────────────────── -->
+    <section class="section section-dark" id="recursos">
+        <div class="container">
+            <div class="section-tag">Nossa proposta</div>
+            <h2 class="section-title">Uma plataforma que trabalha<br>enquanto você lidera</h2>
+            <p class="section-sub">Construímos a Navant Edu depois de analisar cirurgicamente os processos de gestão de
+                dezenas de instituições de ensino. O que encontramos: a maioria das horas perdidas é em tarefas que um
+                sistema deveria fazer automaticamente.</p>
+
+            <div class="pillars-grid">
+                <div class="pillar" data-reveal>
+                    <div class="pillar-icon" style="--clr: #818cf8">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3>Tudo conectado</h3>
+                    <p>Quando um aluno paga, o acesso ao portal, ao conteúdo e à biblioteca é liberado sozinho. Quando
+                        faz matrícula, o histórico já existe. Sem retrabalho, sem risco de erro humano.</p>
+                </div>
+                <div class="pillar" data-reveal data-delay="1">
+                    <div class="pillar-icon" style="--clr: #34d399">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Proteção automática</h3>
+                    <p>Rematrícula bloqueada para inadimplentes — sem que alguém precise lembrar. Bolsas com
+                        rastreamento completo — sem que a auditoria vire um pesadelo. A proteção está no próprio
+                        processo.</p>
+                </div>
+                <div class="pillar" data-reveal data-delay="2">
+                    <div class="pillar-icon" style="--clr: #fbbf24">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Visibilidade real</h3>
+                    <p>Um painel que mostra o que importa: receita, inadimplência, matrículas, evasão. Sem precisar
+                        cruzar planilhas. O gestor vê, decide e age — tudo no mesmo lugar.</p>
+                </div>
+                <div class="pillar" data-reveal data-delay="3">
+                    <div class="pillar-icon" style="--clr: #f87171">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Fácil para todos</h3>
+                    <p>Do aluno que acessa o portal pelo celular ao coordenador que lança frequência no tablet. A Navant
+                        é simples para quem usa e poderosa para quem gerencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── MÓDULOS ───────────────────────────────────────────── -->
+    <section class="section" id="modulos">
+        <div class="container">
+            <div class="section-tag">A plataforma completa</div>
+            <h2 class="section-title">Tudo que você precisa,<br>em uma só plataforma</h2>
+            <p class="section-sub">Chega de um sistema para financeiro, outro para acadêmico, e mais um para RH. Aqui,
+                tudo conversa.</p>
+
+            <div class="tabs" role="tablist">
+                <button class="tab active" data-tab="aluno" role="tab">🎓 Jornada do Aluno</button>
+                <button class="tab" data-tab="gestao" role="tab">🏢 Gestão Institucional</button>
+                <button class="tab" data-tab="integ" role="tab">🔗 Integrações</button>
+            </div>
+
+            <div class="tab-panel active" id="tab-aluno">
+                <div class="modules-grid">
+                    <div class="module-card" data-reveal>
+                        <div class="mod-icon" style="--c:#818cf8">📥</div>
+                        <h4>Captação e Matrículas</h4>
+                        <p>Do lead ao aluno matriculado em poucos cliques. Vestibular, ENEM ou análise de histórico —
+                            você escolhe como selecionar. Acompanhe cada candidato no funil em tempo real.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="1">
+                        <div class="mod-icon" style="--c:#34d399">📚</div>
+                        <h4>Acadêmico</h4>
+                        <p>Grade curricular, turmas, frequência e notas em um único lugar. O histórico do aluno se forma
+                            automaticamente conforme ele avança. Menos secretaria, mais qualidade.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="2">
+                        <div class="mod-icon" style="--c:#fbbf24">💰</div>
+                        <h4>Financeiro e Mensalidades</h4>
+                        <p>Cobranças automáticas, PIX, boleto, desconto de bolsas, parcelamentos. O aluno recebe, paga e
+                            o sistema atualiza. Você só acompanha o painel.</p>
+                    </div>
+                    <div class="module-card" data-reveal>
+                        <div class="mod-icon" style="--c:#f87171">🏥</div>
+                        <h4>Clínica Escola</h4>
+                        <p>Para cursos de Saúde: prontuários eletrônicos, agendamentos e controle de horas práticas.
+                            Conformidade com o MEC sem pilhas de papel.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="1">
+                        <div class="mod-icon" style="--c:#a78bfa">🖥</div>
+                        <h4>Conteúdo e EAD</h4>
+                        <p>Integração com plataformas EAD (Moodle e outros). O acesso é liberado automaticamente após
+                            confirmação do pagamento — sem precisar acionar suporte.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="2">
+                        <div class="mod-icon" style="--c:#38bdf8">📖</div>
+                        <h4>Biblioteca</h4>
+                        <p>Acervo físico e digital, empréstimos, renovações automáticas e reservas online. O aluno
+                            resolve tudo pelo celular.</p>
+                    </div>
+                    <div class="module-card" data-reveal>
+                        <div class="mod-icon" style="--c:#fb923c">📊</div>
+                        <h4>Pesquisas e Avaliações</h4>
+                        <p>NPS de alunos, avaliação institucional para o CPA e pesquisas de satisfação. Coleta
+                            automática, relatórios prontos para o MEC.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="1">
+                        <div class="mod-icon" style="--c:#818cf8">💬</div>
+                        <h4>Comunicação</h4>
+                        <p>E-mail, SMS, WhatsApp e notificações em uma única central. Segmente por curso, por situação
+                            financeira ou por período. Mensagem certa, para a pessoa certa, na hora certa.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="2">
+                        <div class="mod-icon" style="--c:#34d399">💼</div>
+                        <h4>Estágios e Carreiras</h4>
+                        <p>Chega de papel carbono no TCE. O aluno, a empresa e a coordenação assinam digitalmente. As
+                            horas vão para o histórico automaticamente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-gestao">
+                <div class="modules-grid">
+                    <div class="module-card" data-reveal>
+                        <div class="mod-icon" style="--c:#818cf8">🏗</div>
+                        <h4>Compras e Fornecedores</h4>
+                        <p>Abra processos de cotação, receba propostas e contrate com rastreamento completo. Desde a
+                            compra de equipamentos até serviços terceirizados.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="1">
+                        <div class="mod-icon" style="--c:#fbbf24">👔</div>
+                        <h4>Recursos Humanos</h4>
+                        <p>Colaboradores, benefícios, ponto eletrônico e holerites digitais. Integrado ao módulo
+                            financeiro para aplicar descontos de bolsas para funcionários.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="2">
+                        <div class="mod-icon" style="--c:#f87171">⚖</div>
+                        <h4>Contratos e Jurídico</h4>
+                        <p>Contratos organizados, com datas de vencimento monitoradas automaticamente. Nunca mais seja
+                            pego de surpresa por um contrato vencido.</p>
+                    </div>
+                    <div class="module-card" data-reveal>
+                        <div class="mod-icon" style="--c:#38bdf8">🏛</div>
+                        <h4>Espaços e Reservas</h4>
+                        <p>Salas, laboratórios e auditórios reservados pelo sistema, sem conflito de horários. O
+                            calendário acadêmico alimenta tudo automaticamente.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="1">
+                        <div class="mod-icon" style="--c:#a78bfa">🗄</div>
+                        <h4>Arquivo Digital</h4>
+                        <p>RG, diplomas, contratos e TCEs armazenados com segurança. Localize qualquer documento em
+                            segundos, sem procurar em caixas.</p>
+                    </div>
+                    <div class="module-card" data-reveal data-delay="2">
+                        <div class="mod-icon" style="--c:#34d399">🔄</div>
+                        <h4>Fluxos de Aprovação</h4>
+                        <p>Configure quem aprova o quê: bolsas, contratos, compras. A aprovação corre pelo sistema, sem
+                            e-mail perdido ou decisão sem registro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-integ">
+                <div class="integrations-section">
+                    <p class="integ-subtitle">A Navant se conecta com os sistemas que você já usa, sem precisar
+                        abandonar o que funciona.</p>
+                    <div class="integ-grid">
+                        <div class="integ-card" data-reveal>
+                            <div class="integ-icon">✍</div>
+                            <h4>Assinatura Digital</h4>
+                            <p>Contratos, TCEs e matrículas assinados digitalmente com validade jurídica. Integração com
+                                D4Sign e similares.</p>
+                        </div>
+                        <div class="integ-card" data-reveal data-delay="1">
+                            <div class="integ-icon">🏦</div>
+                            <h4>Meios de Pagamento</h4>
+                            <p>PIX, boleto bancário e cartão de crédito. Confirmação automática via sistemas do Banco
+                                Central, sem intervenção manual.</p>
+                        </div>
+                        <div class="integ-card" data-reveal data-delay="2">
+                            <div class="integ-icon">🔍</div>
+                            <h4>Validação de Identidade</h4>
+                            <p>Verificação do candidato na matrícula via biometria e documentos digitais. Segurança para
+                                a instituição, simplicidade para o aluno.</p>
+                        </div>
+                        <div class="integ-card" data-reveal>
+                            <div class="integ-icon">📡</div>
+                            <h4>Sistemas Legados</h4>
+                            <p>Já tem um ERP corporativo ou sistema jurídico? Podemos integrar sem migração forçada.
+                                Cada integração é ativada conforme você precisar.</p>
+                        </div>
+                        <div class="integ-card" data-reveal data-delay="1">
+                            <div class="integ-icon">🎓</div>
+                            <h4>Plataformas EAD</h4>
+                            <p>Moodle, Blackboard e outros. O aluno paga e já tem acesso. Você não precisa fazer nada.
+                            </p>
+                        </div>
+                        <div class="integ-card" data-reveal data-delay="2">
+                            <div class="integ-icon">📊</div>
+                            <h4>BI e Relatórios</h4>
+                            <p>Conexão com Power BI e Google Data Studio. Os dados da plataforma alimentam seus
+                                dashboards favoritos em tempo real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROTEÇÃO ──────────────────────────────────────────── -->
+    <section class="section section-dark" id="protecao">
+        <div class="container">
+            <div class="section-tag">Proteção e controle</div>
+            <h2 class="section-title">Sua receita protegida.<br>Sua gestão tranquila.</h2>
+            <p class="section-sub">A Navant tem um conjunto de verificações automáticas que protegem a instituição
+                contra as perdas mais comuns — sem burocracia adicional para a equipe.</p>
+
+            <div class="protection-grid">
+                <div class="protection-card" data-reveal>
+                    <div class="prot-header">
+                        <div class="prot-icon">💳</div>
+                        <h3>Confirmação automática de pagamentos</h3>
+                    </div>
+                    <p>Chega de verificar comprovante por comprovante. O sistema confirma direto com o banco — sem
+                        depender de ninguém da equipe financeira. O aluno paga, o sistema sabe.</p>
+                    <div class="prot-result">
+                        <span class="result-label">Resultado:</span>
+                        Zero fraudes de comprovante falso
+                    </div>
+                </div>
+
+                <div class="protection-card" data-reveal data-delay="1">
+                    <div class="prot-header">
+                        <div class="prot-icon">🔒</div>
+                        <h3>Rematrícula só para quem está em dia</h3>
+                    </div>
+                    <p>O sistema verifica automaticamente antes de liberar qualquer rematrícula. Não depende de alguém
+                        lembrar de checar. Não passa pelo bom senso de quem está atendendo. É automático.</p>
+                    <div class="prot-result">
+                        <span class="result-label">Resultado:</span>
+                        Inadimplência sob controle, sem constrangimento
+                    </div>
+                </div>
+
+                <div class="protection-card" data-reveal data-delay="2">
+                    <div class="prot-header">
+                        <div class="prot-icon">🎁</div>
+                        <h3>Bolsas com rastreamento completo</h3>
+                    </div>
+                    <p>Cada bolsa registra quem aprovou, quando, por qual motivo e qual departamento autorizou.
+                        Auditoria a qualquer momento, sem procurar em e-mails ou atas de reunião.</p>
+                    <div class="prot-result">
+                        <span class="result-label">Resultado:</span>
+                        Nenhuma bolsa concedida sem rastro
+                    </div>
+                </div>
+
+                <div class="protection-card" data-reveal>
+                    <div class="prot-header">
+                        <div class="prot-icon">📋</div>
+                        <h3>Contratos com alerta de vencimento</h3>
+                    </div>
+                    <p>Contratos de fornecedores, prestadores e convênios monitorados automaticamente. Você recebe um
+                        aviso antes de vencer — nunca mais descobre que renovação atrasou pelo problema.</p>
+                    <div class="prot-result">
+                        <span class="result-label">Resultado:</span>
+                        Sem surpresas jurídicas
+                    </div>
+                </div>
+
+                <div class="protection-card" data-reveal data-delay="1">
+                    <div class="prot-header">
+                        <div class="prot-icon">🆔</div>
+                        <h3>Identidade verificada na matrícula</h3>
+                    </div>
+                    <p>O candidato confirma a identidade digitalmente antes de finalizar a matrícula. Simples para o
+                        aluno, seguro para a instituição. Sem filas na secretaria.</p>
+                    <div class="prot-result">
+                        <span class="result-label">Resultado:</span>
+                        Matrícula segura do primeiro ao último passo
+                    </div>
+                </div>
+
+                <div class="protection-card" data-reveal data-delay="2">
+                    <div class="prot-header">
+                        <div class="prot-icon">📈</div>
+                        <h3>Sinal de evasão antes que aconteça</h3>
+                    </div>
+                    <p>A plataforma cruza frequência, pagamentos e acesso ao portal para identificar alunos em risco de
+                        abandono. Você recebe o alerta quando ainda dá tempo de agir.</p>
+                    <div class="prot-result">
+                        <span class="result-label">Resultado:</span>
+                        Retenção proativa, não reativa
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── COMPARATIVO ─────────────────────────────────────────── -->
+    <section class="section" id="comparativo">
+        <div class="container">
+            <div class="section-tag">Por que Navant Edu?</div>
+            <h2 class="section-title">O que muda na prática</h2>
+            <p class="section-sub">Uma comparação direta com os sistemas tradicionais que a maioria das IES usa hoje.
+            </p>
+
+            <div class="compare-wrap">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th class="th-feature">O que sua equipe faz hoje</th>
+                            <th class="th-old">Sistemas tradicionais</th>
+                            <th class="th-new">Com a Navant Edu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Confirmar pagamento de aluno</td>
+                            <td class="old bad">Verificação manual de comprovante</td>
+                            <td class="new good">Automático — direto com o banco</td>
+                        </tr>
+                        <tr>
+                            <td>Controlar inadimplência na rematrícula</td>
+                            <td class="old bad">Depende de alguém lembrar de checar</td>
+                            <td class="new good">Bloqueio automático antes de liberar</td>
+                        </tr>
+                        <tr>
+                            <td>Processo de estágio (TCE)</td>
+                            <td class="old bad">Papel, assinatura física, arquivo em caixa</td>
+                            <td class="new good">Digital, assinatura online, tudo no sistema</td>
+                        </tr>
+                        <tr>
+                            <td>Liberar acesso ao EAD após pagamento</td>
+                            <td class="old bad">Solicitação para o TI, 1–3 dias</td>
+                            <td class="new good">Imediato e automático</td>
+                        </tr>
+                        <tr>
+                            <td>Gerar relatório gerencial</td>
+                            <td class="old bad">Cruzar planilhas de múltiplos sistemas</td>
+                            <td class="new good">Painel único, dados em tempo real</td>
+                        </tr>
+                        <tr>
+                            <td>Controlar bolsas e descontos</td>
+                            <td class="old bad">Planilha ou configuração manual por aluno</td>
+                            <td class="new good">Política automática com auditoria completa</td>
+                        </tr>
+                        <tr>
+                            <td>Rastrear origem dos candidatos</td>
+                            <td class="old bad">Perguntado na matrícula, não integrado</td>
+                            <td class="new good">UTM rastreado do clique até a matrícula</td>
+                        </tr>
+                        <tr>
+                            <td>Gerenciar múltiplas unidades</td>
+                            <td class="old bad">Sistemas separados por unidade</td>
+                            <td class="new good">Tudo centralizado, dados isolados por unidade</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── INDICAÇÃO ─────────────────────────────────────────── -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-tag">Programa de indicação</div>
+            <h2 class="section-title">Seus alunos ajudando a<br>trazer novos alunos</h2>
+            <p class="section-sub">O boca a boca sempre funcionou. Agora ele funciona com incentivo e rastreamento
+                automático.</p>
+            <div class="mgm-box" data-reveal>
+                <div class="mgm-step">
+                    <div class="mgm-num">1</div>
+                    <h4>Aluno indica um amigo</h4>
+                    <p>Compartilha um link personalizado. A origem fica registrada desde o primeiro clique.</p>
+                </div>
+                <div class="mgm-arrow">→</div>
+                <div class="mgm-step">
+                    <div class="mgm-num">2</div>
+                    <h4>Amigo se matricula e paga</h4>
+                    <p>A jornada completa fica rastreada: quem indicou, qual curso, qual campanha.</p>
+                </div>
+                <div class="mgm-arrow">→</div>
+                <div class="mgm-step">
+                    <div class="mgm-num">3</div>
+                    <h4>Desconto aplicado automaticamente</h4>
+                    <p>O aluno que indicou recebe o benefício na próxima mensalidade, sem precisar pedir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CTA ───────────────────────────────────────────────── -->
+    <section class="section" id="cta">
+        <div class="container">
+            <div class="cta-box" data-reveal>
+                <div class="cta-glow"></div>
+                <div class="cta-inner">
+                    <div class="cta-text">
+                        <h2>Veja a Navant funcionando<br>com os dados da sua instituição</h2>
+                        <p>Em 45 minutos, mostramos como a plataforma resolve os desafios específicos da sua faculdade.
+                            Sem enrolação, sem apresentação genérica.</p>
+                        <ul class="cta-benefits">
+                            <li>✓ Demonstração personalizada para o seu perfil de IES</li>
+                            <li>✓ Sem compromisso de contratação</li>
+                            <li>✓ Consultor especialista em gestão educacional</li>
+                        </ul>
+                    </div>
+                    <div class="cta-form-area">
+                        <h3>Agendar demonstração gratuita</h3>
+                        <div class="cta-form">
+                            <input type="text" id="inst-name" placeholder="Nome da instituição"
+                                autocomplete="organization">
+                            <input type="text" id="contact-name" placeholder="Seu nome" autocomplete="name">
+                            <input type="email" id="contact-email" placeholder="E-mail de trabalho"
+                                autocomplete="email">
+                            <input type="tel" id="contact-phone" placeholder="Telefone / WhatsApp" autocomplete="tel">
+                            <button class="btn-primary btn-full" id="cta-btn" onclick="handleCTA()">
+                                Agendar minha demonstração
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="form-fine">Ao enviar, você concorda com nossa Política de Privacidade. Sem spam,
+                            prometemos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-mark">
+                            <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
+                                <rect width="36" height="36" rx="10" fill="url(#flg1)" />
+                                <circle cx="18" cy="13" r="5" fill="white" opacity="0.9" />
+                                <ellipse cx="18" cy="26" rx="9" ry="5" fill="white" opacity="0.5" />
+                                <defs>
+                                    <linearGradient id="flg1" x1="0" y1="0" x2="36" y2="36">
+                                        <stop stop-color="#6366f1" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="nav-brand">Navant <strong>Edu</strong></span>
+                    </a>
+                    <p>Plataforma completa de gestão para instituições de ensino. Tudo conectado, tudo simples.</p>
+                    <div class="footer-tags">
+                        <span>Matrículas</span><span>Financeiro</span>
+                        <span>Acadêmico</span><span>Estágios</span><span>Compras</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Plataforma</h5>
+                    <ul>
+                        <li><a href="#modulos">Jornada do Aluno</a></li>
+                        <li><a href="#modulos">Gestão Institucional</a></li>
+                        <li><a href="#protecao">Proteção e Controle</a></li>
+                        <li><a href="#integ">Integrações</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Recursos</h5>
+                    <ul>
+                        <li><a href="#">Documentação Técnica</a></li>
+                        <li><a href="#">Cases de Sucesso</a></li>
+                        <li><a href="#">Conformidade LGPD</a></li>
+                        <li><a href="#">Requisitos MEC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Empresa</h5>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#cta">Falar com vendas</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Navant Edu. Todos os direitos reservados.</p>
+                <p>Feito para quem transforma vidas através da educação.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
